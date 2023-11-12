@@ -124,39 +124,60 @@ transform: scaleX(0.5);
     color: #4C4622;
 }
 
-.contact-me,
+.contact,
 .product {
     padding: 8rem 7% 1.4rem;
 }
-.contact-text h2, .product h2, .delivery h2 {
+.contact h2, .product h2, .delivery h2 {
     color: var(--logo);
     text-align: center;
     font-size: 4rem;
     margin-bottom: 3rem;
 }
-.contact-box {
-    color: grey;
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #4C4622;
 }
-.contact-box:after {
-    content: '';
-    display: block;
-    clear: both;
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
 }
-.contact {
-    width: 19%;
-    padding: 30px;
-    box-sizing: border-box;
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
     text-align: center;
-    float: left;
 }
-.contact h4 {
-    color: black;
-    padding-bottom: 10px;
+
+.contact .input-group{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
 }
-.contact p {
-    font-size: 15px;
+
+.contact .input-group input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+
 }
- .product h2 {
+
+.contact .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #4C4622;
+}
+.product h2 {
     margin-bottom: 1rem;
  }
 .product p {
@@ -247,7 +268,7 @@ img {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 98px;
     bottom: 0;
@@ -347,7 +368,27 @@ font-weight: bold;
     main .container-beli a{
         margin-right: 50px;
     }
+
+    .contact .row{
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map{
+        height: 30rem;
+    }
+
+    .contact .row form{
+        padding-top: 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
     
+    .image img {
+        margin-top: 15rem;
+    }
+
 }
 /* mobile phone */
 @media (max-width: 450px) {
