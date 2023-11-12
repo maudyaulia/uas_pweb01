@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap');
+
+:root {
+    --bg: #F6F1ED;
+    --logo: #4C4622;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 7%;
+    background-color:  rgba(245, 241, 237);
+    border-bottom: 2px solid var(--logo);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--logo);
+    font-style: italic;
+    letter-spacing: 0.4rem;
+}
+
+.navbar .navbar-nav a{
+    color: black;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--logo);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--logo);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--logo);
+}
+
+#huum-menu {
+    display: none;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.content p{
+    font-size: 2rem;
+    color: #afada0;
+    font-weight: 10000;
+} 
+.image {
+    margin-top: -50px;
+}
+.image img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100% 100%  0 0;
+}
+
+.container .content {
+    padding: 3rem 7%;
+    max-width: 55rem;
+}
+
+.container .content h1 {
+    font-size: 5em;
+    color: var(--logo);
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+.container .content span {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-weight: 10000;
+    color: #4C4622;
+}
+
+.contact-me,
+.product {
+    padding: 8rem 7% 1.4rem;
+}
+.contact-text h2, .product h2, .delivery h2 {
+    color: var(--logo);
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.contact-box {
+    color: grey;
+}
+.contact-box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.contact {
+    width: 19%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.contact h4 {
+    color: black;
+    padding-bottom: 10px;
+}
+.contact p {
+    font-size: 15px;
+}
+ .product h2 {
+    margin-bottom: 1rem;
+ }
+.product p {
+    text-align: center;
+    max-width: 30%;
+    margin: auto;
+    font-weight: 100%;
+    line-height: 1.6rem;
+}
+
+.product .row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 5rem;
+    margin-left: 7rem;
+}
+
+.product .row .menu-card{
+    text-align: center;
+}
+
+.product .row .menu-card img {
+    border-radius: 100% 100% 0 0;
+    width: 20rem;
+    height: 20rem;
+}
+
+.product .menu-card-title  {
+    margin: 1.5rem auto 0.5rem;
+}
+.menu-card-detail a {
+    margin: 1.5rem auto 0.5rem;
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background:var(--logo);
+    color: var(--bg)
+
+}
+
+.menu-card-detail a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+
+main {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction:row ;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.deskripsi h2 {
+    text-align:justify;
+    margin: auto;
+    margin-left: 80px;
+    max-width: 80vh;
+    color: var(--logo);
+}
+
+ .container-beli a { 
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 80px;
+    font-size: 1rem;
+    border-radius: 3rem;
+    background:var(--logo);
+    color: var(--bg)
+}
+
+img {
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin-left: 30px;
+}
+
+.container-beli a:hover{
+    color: white;
+    background-color: black;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 98px;
+    bottom: 0;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    footer p:nth-child(1){
+font-size: 15px;
+color: var(--logo);
+font-weight: bold;
+}
+.sosial{
+    display: flex;
+}
+.sosial a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--logo);
+    border-radius: 50%;
+    margin: 2px 6px;
+    color: var(--bg);
+}
+.sosial a:hover {
+    background-color: black;
+    color: white;
+}
+.end {
+    position: absolute;
+    color: var(--logo);
+    bottom: 0;
+    font-size: 11px;
+}
+
+/* media queris */
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* tablet */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+
+   #huum-menu {
+    display: inline-block;
+   }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav  a {
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.2);
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main img {
+        max-width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        } 
+
+    main .deskripsi h2 {
+        max-width: 55vh;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    main .container-beli a{
+        margin-right: 50px;
+    }
+    
+}
+/* mobile phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
