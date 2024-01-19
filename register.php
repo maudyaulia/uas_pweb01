@@ -9,7 +9,7 @@ $query_sql = "INSERT INTO tbuser (fullname, username, email, password)
 VALUE ('$fullname', '$username', '$email', '$password')";
 
 if (mysqli_query($conn, $query_sql)) {
-    header("Location: login.html");
+    header("Location: index.html");
 }else {
     echo "Pendaftaran Gagal : " . mysqli_error($conn);
 }
